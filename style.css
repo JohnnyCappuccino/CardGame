@@ -1,0 +1,117 @@
+@font-face {
+  font-family: myFirstFont;
+  src: url(src/components/Yu-Gi-Oh!\ Matrix\ Book.ttf);
+}
+
+*{
+  font-family: myFirstFont,Tahoma, sans-serif;
+}
+
+.cardParent{
+  height: 250px;
+  width: 180px;
+}
+
+.Card{
+  height: 100%;
+  width: 100%;
+  background-size: 180px 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 3px solid rgba(0, 0, 0, 0);
+  transition: 0.5s;
+} 
+
+.Card:hover{
+  border: 3px solid gold;
+}
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+body {
+  background-image: url("public/Images/background.png");
+  background-size: fill;
+  background-repeat: no-repeat;
+}
+
+.menu{
+  color: white;
+  border: solid 1px white;
+  width: 500px;
+  height: 250px;
+  margin-left: 37%;
+  margin-top: 10%;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align: center;
+  gap: 20px;
+}
+
+.Selected{
+  border:2px solid transparent;
+  background-color: white;
+  color: blue;
+  width: 150px;
+  transition: 0.5s;
+}
+
+.notSelected{
+  border:2px solid white;
+  background-color: transparent;
+  color: white;
+  width: 100px;
+  transition: 0.5s;
+}
+
+.gameModes{
+  display: flex;
+  gap: 30px;
+}
+
+.header{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size:larger;
+  background-color:rgba(0, 0, 0, 0.352);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header>button{
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  color: white;
+  border:2px solid white;
+  font-size: large;
+  transition: 1s;
+}
+
+.header>button:hover{
+  color: black;
+  background-color: white;
+  border:2px solid transparent;
+}
+
+.buttonMain{
+  height: 50px;
+  width: 150px;
+  background-color: transparent;
+  color: white;
+  border:2px solid white;
+  font-size: large;
+  transition: 1s;
+}
+
+.buttonMain:hover{
+  color: black;
+  background-color: white;
+  border:2px solid transparent;
+}
