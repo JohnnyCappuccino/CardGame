@@ -5,7 +5,7 @@ return(
   <div className="cardParent">
       <div className="Card" 
         onClick={()=> onClick(url)}
-        style={{backgroundImage: `url(public/Images/${url})`}}>  
+        style={{backgroundImage: `url(/Images/${url})`}}>  
       </div>
   </div>
 )
